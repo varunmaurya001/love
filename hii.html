@@ -1,8 +1,6 @@
 <!--
 Author: Varun Maurya
-Complete Final Code (HTML + CSS + JavaScript)
 -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,6 +23,19 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
+}
+
+/* 🔹 NAME ON PAGE CORNER */
+.page-name{
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  font-size: 14px;
+  color: #000;
+  background: rgba(255,255,255,0.6);
+  padding: 4px 10px;
+  border-radius: 12px;
+  z-index: 9999;
 }
 
 .container{
@@ -74,8 +85,11 @@ button{
 
 <body>
 
+<!-- ✅ NAME DISPLAY -->
+<div class="page-name">Varun Maurya</div>
+
 <div class="container" id="box">
-  <img id="img" src="start.jpeg">
+  <img src="start.png">
   <h2 id="text">Do you love me? 🥺</h2>
   <p id="sub">mw is all yours</p>
 
@@ -128,7 +142,7 @@ noBtn.addEventListener("touchstart", moveNoButton);
 
 yesBtn.addEventListener("click", () => {
   box.innerHTML = `
-    <img src="happy.jpeg">
+    <img src="happy.png" width="160">
     <h2>I knew it! ❤️</h2>
     <p>You love me a lot 😍</p>
   `;
@@ -137,5 +151,3 @@ yesBtn.addEventListener("click", () => {
 
 </body>
 </html>
-
-
